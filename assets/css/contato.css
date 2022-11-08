@@ -1,0 +1,98 @@
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+
+.contato__titulo {
+    font-size: 1.125rem;
+    line-height: 1.687rem;
+    font-weight: 500;
+    background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.contato__texto {
+    line-height: 1.5rem;
+    font-weight: 300;
+    background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+}
+
+.contato__email {
+    color: #002F52;
+    background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-radius: 1.5rem;
+    border: 1px solid #002F52;
+    padding: 1rem 1.5rem;
+}
+
+.contato__email::placeholder {
+    color: #002F52;
+    background-image: url(../img/contato/email.svg);
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .contato__titulo {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+    
+    .contato__texto {
+        line-height: 1rem;
+    }
+
+    .contato__email {
+        width: 30%;
+    }
+
+    .contato__descricao {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .contato {
+        padding: 3rem;
+    }
+
+    .contato__titulo {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+    
+    .contato__texto {
+        line-height: 1rem;
+    }
+
+    .contato__email {
+        width: 30%;
+    }
+
+    .contato__descricao {
+        width: 40%;
+    }
+}
